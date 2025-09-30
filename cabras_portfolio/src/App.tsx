@@ -25,7 +25,7 @@ export default function App() {
                 {/* Profile Picture with circular styling */}
                 <div className="w-full h-full rounded-full overflow-hidden bg-slate-800 profile-image-container">
                   <img 
-                    src="src/jebo.png" 
+                    src="/jebo.png" 
                     alt="Ark Jeremy Cabugwason Cabras"
                     className="profile-image"
                   />
