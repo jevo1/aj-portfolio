@@ -3,6 +3,7 @@ import { Badge } from './components/ui/badge';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { Button } from './components/ui/button';
 import { Separator } from './components/ui/separator';
+import './index.css'; // Import the CSS file for custom styles
 
 export default function App() {
   const skills = {
@@ -20,9 +21,14 @@ export default function App() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-75 group-hover:opacity-100 blur transition duration-300"></div>
-              <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
-                <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center">
-                  <span className="text-5xl md:text-6xl">👨‍💻</span>
+              <div className="relative w-32 h-32 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
+                {/* Profile Picture with circular styling */}
+                <div className="w-full h-full rounded-full overflow-hidden bg-slate-800 profile-image-container">
+                  <img 
+                    src="src/jebo.png" 
+                    alt="Ark Jeremy Cabugwason Cabras"
+                    className="profile-image"
+                  />
                 </div>
               </div>
             </div>
@@ -69,7 +75,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main Content */}
+      {/* Rest of your component remains the same */}
       <main className="max-w-6xl mx-auto px-6 py-12 space-y-12">
         {/* Education Section */}
         <section>
